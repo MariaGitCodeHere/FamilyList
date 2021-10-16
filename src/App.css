@@ -1,0 +1,197 @@
+/*
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
+
+
+
+
+
+
+/*REACT блок*/
+
+.column {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 10px;
+  z-index: 888;
+  margin-right: 20px;
+  vertical-align: top;
+  max-width: 300px;
+  height: 70vh;
+  overflow: scroll;
+}
+.column:nth-child(2) {
+  border-left: 2px solid #dcdfe6;
+}
+.column:nth-child(3) {
+  border-left: 2px solid #dcdfe6;
+}
+.column h1 {
+  padding-bottom: 20px;
+  color: #1b2620;
+}
+.plus {
+  background-color: #4f828f;
+  border-radius: 20px;
+  padding: 3px 9px;
+  line-height: 20px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+ .plus:hover {
+  background-color: #aa815e;
+ }
+ .plus:focus,
+ .plus:active {
+  outline: none;
+ }
+ul li {
+  list-style: none;
+  line-height: 26px;
+  cursor: pointer;
+}
+ul li:hover, ul li:focus {
+  background-color: #d5cf55;
+}
+li:nth-child(1):hover {
+  background-color: white;
+}
+
+
+
+.link-hovered {
+  color: #778e89;
+  border-radius: 20px;
+  padding: 1px 5px 2px 3px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.link-hovered:hover {
+  background-color: white;
+}
+
+.activeElement {
+  background-color: #d5cf55;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+
+
+
+
+/*MODAL блок*/
+
+.modalBox {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
+  position: fixed;
+  background-color: rgba(245, 244, 228, .9);
+  overflow: scroll;
+}
+
+.for-form {
+  position: absolute;
+  box-shadow: 1px 2px 5px grey;
+  width: 500px;
+  height: 700px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  margin: auto;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+form {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
+  width: 350px;
+  height: 570px;
+  overflow: scroll;
+}
+form div {
+  margin-bottom: 25px;
+}
+
+
+
+label {
+  font-size: 16px;
+}
+input, #back {
+  font-size: 14px;
+  border: 3px solid #edeabf;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #000000;
+  outline: none;
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+input::placeholder {
+  color: #778e89;
+}
+#submit {
+  background-color: #edeabf;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#back {
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+/*#submit:hover {
+  margin-top: 13px;
+}*/
+
+
+
+@media all and (max-height: 560px) {
+  form {
+
+  }
+  .for-form {
+
+  }
+}
+

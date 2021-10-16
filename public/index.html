@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Surnames List</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <header>
+      <div></div>
+      <img src="images/chat.png" alt="logo">
+    </header>
+
+    <main>
+      <p>This tool for genealogy researchers. It works in the following order: choose the surname, then the region and then you will see contacts. If you can't find your surname or your area or any contact fill free to add yours to the website. For example: I add Semenyuk, then add the area, where Semenyuks lived (Aban, Krasnoyarskiy) and then leave my name as a contact.</p>
+      
+      <div id="root">
+        <div id="reactBlock"></div>
+      </div>
+      
+      <div class="share">
+        <span class="btnOpen">♡&nbsp;Share</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span><a href="mailto:g.ionina.g@gmail.com?subject=Message from surnames-site" target="_blank">✎&nbsp;Contact</a></span>
+      </div>
+    </main>
+
+    <div id="modalBoxShare">
+      <div class="container">
+        <h1>Share this information in your social web-pages</h1>
+        <p style="color: #778e89;">This tool for genealogy researchers. It works in the following order: choose the surname, then the region and then you will see contacts. If you can't find your surname or your area or any contact fill free to add yours to the website. For example: I add Semenyuk, then add the area, where Semenyuks lived (Aban, Krasnoyarskiy) and then leave my name as a contact.<br><br>link_to_website</p>
+        <button class="btnBack">Назад</button>
+      </div>
+    </div>
+    <div id="modalBoxPolitics">
+      <div class="container">
+        <h1>Politic and rights</h1>
+        <p>Этот сайт создан и&nbsp;работает только с&nbsp;одной целью -&nbsp;помочь людям найти дальних родственников. Никакие другие мотивы не&nbsp;интересны и&nbsp;не&nbsp;преследуются создателями сайта. Если вы заметили, что кто-то пытается использовать этот сайт для&nbsp;других целей, просим незамедлительно сообщить нам об&nbsp;этом.<br>
+        Создатели сайта не&nbsp;несут ответственность за&nbsp;материал, оставляемый посетителями сайта. Но&nbsp;создатели оставляют за&nbsp;собой право удалять, корректировать информацию, чтобы она отвечала принципам этичности, правил орфографии и&nbsp;была&nbsp;актуальной.</p>
+        <button class="btnBack">Назад</button>
+      </div>
+    </div>
+
+    <footer>
+      <span>
+        <span>
+          ©&nbsp;By&nbsp;Semenyuks,&nbsp;2019.
+        </span>
+      </span>
+      <span class="btnOpen">
+        Politics&nbsp;and&nbsp;rights
+      </span>
+    </footer>
+
+
+    <script type="text/babel" href="/src/index.js"></script>
+    <script>
+      const share = document.getElementById("modalBoxShare");
+      const openShare = document.getElementsByClassName("btnOpen")[0];
+      const closeShare = document.getElementsByClassName("btnBack")[0];
+
+      openShare.onclick = function() {
+        share.style.display = "block";
+      }
+
+      closeShare.onclick = function() {
+        share.style.display = "none";
+      }
+
+      // window.onclick = function(event) {
+      //   if (event.target == share) {
+      //     share.style.display = "none";
+      //   }
+      // }
+
+      const politics = document.getElementById("modalBoxPolitics");
+      const openPolitics = document.getElementsByClassName("btnOpen")[1];
+      const closePolitics = document.getElementsByClassName("btnBack")[1];
+
+      openPolitics.onclick = function() {
+        politics.style.display = "block";
+      }
+
+      closePolitics.onclick = function() {
+        politics.style.display = "none";
+      }
+
+      // window.onclick = function(event) {
+      //   if (event.target == politics) {
+      //     politics.style.display = "none";
+      //   }
+      // }
+    </script>
+
+  </body>
+</html>

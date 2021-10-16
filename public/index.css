@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: system-ui, sans-serif;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+a, a:active, a:focus {
+	color: #778e89;
+	text-decoration: none;
+}
+
+
+
+
+/*FIRST PART*/
+
+header {
+	background-color: rgb(66, 103, 178);
+}
+header div {
+	background-image: url("images/cover.jpg");
+	background-color: white;
+	background-size: cover;
+	background-position: top;
+	width: 100%;
+	height: 145px;
+}
+header img {
+	position: absolute;
+	margin-top: -60px;
+	margin-left: 90px;
+	height: 130px;
+}
+
+
+
+/*SECOND PART*/
+
+main {
+	background-color: white;
+	padding-top: 80px;
+}
+main p {
+	padding: 10px 100px;
+	text-align: justify;
+	font-size: 14px;
+	line-height: 24px;
+}
+#reactBlock {
+	margin: 30px 100px;
+	padding: 20px 5px;
+	border: 6px solid #4f828f;
+	height: 70vh;
+	position: relative;
+}
+
+
+
+
+/*THIRD PART*/
+
+#modalBoxPolitics,
+#modalBoxShare {
+	top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: auto;
+    position: fixed;
+    background-color: rgba(245, 244, 228, .9);
+    display: none;
+}
+.container {
+	position: absolute;
+	box-shadow: 1px 2px 5px grey;
+	width: 500px;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	margin: auto;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 45px 40px;
+	height: 460px;
+}
+.container h1 {
+	margin-bottom: 25px;
+}
+.container p {
+	font-size: 15px;
+	text-align: justify;
+	line-height: 23px;
+}
+
+.btnBack {
+	font-size: 14px;
+	padding: 5px;
+	width: 100%;
+	box-sizing: border-box;
+	color: #000000;
+	outline: none;
+	margin-bottom: 10px;
+	border: none;
+	cursor: pointer;
+	margin-top: 25px;
+}
+
+
+
+/*FORTH PART*/
+
+.share {
+	padding: 0px 100px 40px 100px;
+	font-size: 15px;
+	cursor: pointer;
+	color: #778e89;
+}
+.share span {
+	margin-right: 15px;
+}
+.share span:hover,
+.share a:hover {
+	color: black;
+}
+
+
+
+
+footer {
+	font-size: 13px;
+	padding: 10px 100px;
+	background-color: #dcdfe6;
+	color: #778e89;
+}
+footer span {
+	margin-right: 25px;
+	line-height: 20px;
+}
+.btnOpen {
+	cursor: pointer;
+}
+.btnOpen:hover {
+	color: black;
+}
+
+
+
+
+/*@media all and (max-height: 560px) {
+	.container {
+		position: relative;
+	}
+}*/
