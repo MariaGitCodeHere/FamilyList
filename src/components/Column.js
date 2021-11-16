@@ -1,17 +1,14 @@
 import React from 'react';
 import Modal from './Modal.js';
-import './App.css';
+import '../App.css';
 
 
 class Column extends React.Component {
 	state = { show: false};
 
-	showModal = () => {
-		this.setState({ show: true});
-	};
-	hideModal = () => {
-		this.setState({ show: false});
-	};
+	showModal = () => this.setState({ show: true});
+	hideModal = () => this.setState({ show: false});
+	
 
 
 	render () {

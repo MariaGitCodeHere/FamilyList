@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './App.css';
+import '../App.css';
 
 
 const Modal = ({ handleClose, show, children, transferElements }) => {
@@ -9,9 +9,7 @@ const Modal = ({ handleClose, show, children, transferElements }) => {
 
 	const fields = {}
 
-	const addElement = event => {
-		transferElements(fields)
-	}
+	const addElement = event => transferElements(fields)
 
 	const saveField = (attrName) => {
 		return (event) => {

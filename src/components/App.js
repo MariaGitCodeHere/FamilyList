@@ -1,6 +1,6 @@
 import React from 'react';
 import Column from './Column.js';
-import './App.css';
+import '../App.css';
 
 
 class App extends React.Component {
